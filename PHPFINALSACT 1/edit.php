@@ -9,30 +9,30 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<?php $getUserByID = getUserByID($pdo, $_GET['id']); ?>
+	<?php $getApplicantByID = getApplicantByID($pdo, $_GET['id']); ?>
 	<h1>Edit Here!</h1>
 	<form action="core/handling.php?id=<?php echo $_GET['id']; ?>" method="POST">
 		<p>
 			<label for="firstName">First Name</label> 
-			<input type="text" name="first_name" value="<?php echo $getUserByID['first_name']; ?>">
+			<input type="text" name="first_name" value="<?php echo $getApplicantByID['first_name']; ?>">
 		</p>
 		<p>
 			<label for="firstName">Last Name</label> 
-			<input type="text" name="last_name" value="<?php echo $getUserByID['last_name']; ?>">
+			<input type="text" name="last_name" value="<?php echo $getApplicantByID['last_name']; ?>">
 		</p>
 		<p>
 			<label for="firstName">Email</label> 
-			<input type="text" name="email" value="<?php echo $getUserByID['email']; ?>">
+			<input type="text" name="email" value="<?php echo $getApplicantByID['email']; ?>">
 		</p>
 		<p>
 			<label for="firstName">Gender</label> 
-			<input type="text" name="gender" value="<?php echo $getUserByID['gender']; ?>">
+			<input type="text" name="gender" value="<?php echo $getApplicantByID['gender']; ?>">
 		</p>
 		<p>
 			<label for="firstName">position</label> 
-			<input type="text" name="position" value="<?php echo $getUserByID['position']; ?>">
+			<input type="text" name="position" value="<?php echo $getApplicantByID['position']; ?>">
 		</p>
-			<input type="submit" value="Save" name="editUserBtn">
+			<input type="submit" value="Save" name="editApplicantBtn">
 		</p>
 	</form>
 </body>

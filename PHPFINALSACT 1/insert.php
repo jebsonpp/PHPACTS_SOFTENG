@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<h1>Edit the user!</h1>
+<?php include 'navigation.php'; ?>
+
+	<h1>Insert a New user here!</h1>
 	<form action="core/handling.php" method="POST">
 		<p>
 			<label for="firstName">First Name</label> 
@@ -32,7 +34,7 @@
 			<input type="text" name="position">
 		</p>
 		<p>
-			<input type="submit" name="insertUserBtn">
+			<input type="submit" name="insertApplicantBtn">
 		</p>
 	</form>
 </body>
